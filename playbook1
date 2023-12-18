@@ -1,0 +1,19 @@
+---
+#This is a simple playbook to install nginx onto another server
+- name: Install and start nginx
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Start nginx
+      service:
+        name: nginx
+        state: started
+
+
+
