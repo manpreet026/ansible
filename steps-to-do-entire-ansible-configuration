@@ -1,0 +1,9 @@
+To run ansible playbook, the command can be
+ansible-playbook -i inventory playbook.yml
+
+ansible-playbook -vvv -i inventory playbook.yml
+for more verbocity
+for debug logs
+
+ansible-galaxy role init <nameoffile>
+
